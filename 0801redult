@@ -1,0 +1,140 @@
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> food = "Python's favorite food is perl"
+>>> food
+"Python's favorite food is perl"
+>>> food = 'Python's favorite food is perl'
+  File "<stdin>", line 1
+    food = 'Python's favorite food is perl'
+                   ^
+SyntaxError: invalid syntax
+>>> say = '"Python is very easy."he says.'
+>>> say
+'"Python is very easy."he says.'
+>>> food = 'Python\'s favorite food is perl'
+>>> say = "\"Python is very easy.\" the says."
+>>> food
+"Python's favorite food is perl"
+>>> day
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'day' is not defined. Did you mean: 'say'?
+>>> say
+'"Python is very easy." the says.'
+>>> multiline = "Life is too short\nYou need python"
+>>> multiline
+'Life is too short\nYou need python'
+>>> >>> multiline = "Life is too short\nYou need python"
+  File "<stdin>", line 1
+    >>> multiline = "Life is too short\nYou need python"
+    ^^
+SyntaxError: invalid syntax
+>>> multiline = "Life is too short\nYou need python"
+>>> multiline
+'Life is too short\nYou need python'
+>>> multiline='''
+... life is too short
+... you need python
+... '''
+>>> multiline
+'\nlife is too short\nyou need python\n'
+>>> head="python"
+>>> tail="is fun!"
+>>> head+tail
+'pythonis fun!'
+>>> head+tail
+'pythonis fun!'
+>>> tail=" is fun!"
+>>> head+tail
+'python is fun!'
+>>> a="python"
+>>> a*2
+'pythonpython'
+>>> #multistring.py
+>>> print('='*50)
+==================================================
+>>> a = "Life is too short"
+>>> len(a)
+17
+>>> a = "Life is too short, You need Python"
+>>> a[3]
+'e'
+>>> a[0]
+'L'
+>>> a[0:4]
+'Life'
+>>> a[0:3]
+'Lif'
+>>> a[0:5]
+'Life '
+>>> #a[0:3]-> 0<=a,3
+>>> a[0:]
+'Life is too short, You need Python'
+>>> a="20230331Rainy"
+>>> date=a[:8]
+>>> weather=a[8:]
+>>> date
+'20230331'
+>>> weatehr
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'weatehr' is not defined. Did you mean: 'weather'?
+>>> weather
+'Rainy'
+>>> year=a[:5]
+>>> year
+'20230'
+>>> year=a[:4]
+>>> year
+'2023'
+>>> a="pithon'
+  File "<stdin>", line 1
+    a="pithon'
+      ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> a='piton'
+>>> a[:1]='P'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> a = "Pithon"
+>>> a[1]=y
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'y' is not defined
+>>> a[1]='y'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> >>> a = "Pithon"
+  File "<stdin>", line 1
+    >>> a = "Pithon"
+    ^^
+SyntaxError: invalid syntax
+>>> >>> a[:1]
+  File "<stdin>", line 1
+    >>> a[:1]
+    ^^
+SyntaxError: invalid syntax
+>>> 'P'
+'P'
+>>> >>> a[2:]
+  File "<stdin>", line 1
+    >>> a[2:]
+    ^^
+SyntaxError: invalid syntax
+>>> 'thon'
+'thon'
+>>> >>> a[:1] + 'y' + a[2:]
+  File "<stdin>", line 1
+    >>> a[:1] + 'y' + a[2:]
+    ^^
+SyntaxError: invalid syntax
+>>> 'Python'
+'Python'
+>>> a = "Pithon"
+>>> a = a[:1] + 'y' + a[2:]
+>>> print(a)  # 출력: 'Python'
+Python
+>>>
+>>>
